@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../../fonts/Poppins-Bold.ttf);
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+    background-image: url('../../images/visi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.navbar{
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #7655b3;
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-around;
+}
+.navbar-title{
+    font-family: 'Poppins-Bold';
+    font-size: 1.3em;
+    color: #7655b3;
+}
+.navbar-menu{
+    display: flex;
+    gap: 80px;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a{
+    color: #7655b3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #7655b3;
+    color: white;
+}
+
+.content-container{
+    margin-top: 100px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.visimisi-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 15px;
+    padding: 40px;
+}
+.visi-desc-title, .misi-desc-title{
+    font-family: 'Poppins-Bold';
+    font-size: 1.8em;
+    color: #7655b3;
+}
+.visi-desc, .misi-desc{
+    color: #362358;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}

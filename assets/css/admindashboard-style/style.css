@@ -1,0 +1,320 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../../fonts/Poppins-Bold.ttf);
+}
+body{
+    margin: 0;
+    background-color: #7655b3;
+    overflow: hidden;
+}
+*{
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+}
+
+
+/* side bar class */
+.sidebar{
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    background-color: #5b3a94;
+    padding: 20px;
+}
+.sidebar-header{
+    display: flex;
+    align-items: center;
+}
+.sidebar-items-container{
+    height: 85vh;
+    margin-top: 40px;
+    position: relative;
+}
+.items{
+    padding: 5px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.active{
+    border-radius: 5px;
+    background-color: #8760ca;
+}
+.logout{
+    position: absolute;
+    bottom: 30px;
+}
+.items-title{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+/* end of sidebar */
+
+/* content container */
+.content-container{
+    margin-top: 40px;
+    margin-left: 120px;
+    display: flex;
+}
+.content-left{
+    margin-right: 50px;
+    width: 75%;
+}
+.welcome-card{
+    background-color: #5b3a94;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+.welcome-title{
+    font-size: 1.3em;
+    font-family: 'Poppins-bold';
+}
+.welcome-subtitle{
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+.content-right{
+    width: 20%;
+}
+/* end of welcome card */
+
+
+/* total-container */
+.total-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.total-card{
+    width: 30%;
+    border-radius: 15px;
+    padding: 25px 20px 25px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #5b3a94;
+    color: white;
+}
+.avatar{
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    background-color: #60baca;
+    color: white;
+    margin-right: 10px;
+}
+.total-title{
+    font-family: 'Poppins-bold';
+    font-size: 1.3em;
+}
+.total-subtitle{
+    margin-top: -5px;
+}
+/* end of total */
+
+/* list container */
+.list-container{
+    height: 60vh;
+    border-radius: 15px;
+    background-color: #5b3a94;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.list-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.list-title{
+    font-family: 'Poppins-Bold';
+    font-size: 1.2em;
+}
+.tool-container input{
+    height: 40px;
+    padding-left: 20px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+}
+.search-btn{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.tabel-container{
+    margin-top: 10px;
+    height: 55vh;
+    overflow-y: scroll;
+}
+.tabel-container::-webkit-scrollbar {
+    display: none;
+}
+.valid{
+    /* background-color: rgb(66, 167, 170); */
+    text-align: center;
+    border-radius: 15px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.no{
+    /* background-color: rgb(223, 72, 72); */
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.tabel-container {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+.tabel-container table{
+    width: 100%;
+    text-align: left;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+}
+.tabel-container table td, th{
+    padding: 15px 10px 15px 10px;
+}
+.tabel-container table a{
+    cursor: pointer;
+    color: white;
+}
+.statuses{
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(211, 200, 38);
+    border-radius: 15px;
+    font-size: 10pt;
+}
+.valid{
+    background-color: rgb(83, 225, 166);
+}
+.not-valid{
+    background-color: rgb(234, 91, 63);
+}
+.keterangan{
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* end of left content */
+
+/* content - right */
+.content-right{
+    background-color: #5b3a94;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+}
+.right-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting-btn{
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    color: #5b3a94;
+}
+.profile-pict-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.profile-pict{
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+    border-radius: 1000px;
+}
+.username-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.edit-profile-btn{
+    margin-top: 20px;
+    text-align: center;
+}
+.edit-profile-btn button{
+    background-color: #ffffff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #5b3a94;
+    font-weight: bold;
+    cursor: pointer;
+}
+.detail-container{
+    margin-top: 20px;
+}
+.detail{
+    display: flex;
+}
+.detail span{
+    margin-right: 10px;
+}
+/*  */
+
+@media screen and (max-width: 1024px) {
+    .content-right{
+        display: none;
+    }
+    .content-left{
+        width: 95%;
+    }
+    .total-card{
+        padding: 10px;
+    }
+    .total-subtitle{
+        font-size: 10pt;
+    }
+    .tabel-container{
+        font-size: 10pt;
+    }
+    .statuses{
+        font-size: 5pt;
+        color: black;
+    }
+    .keterangan{
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .content-right{
+        display: none;
+    }
+    .content-left{
+        width: 95%;
+    }
+    .total-card{
+        padding: 10px;
+    }
+    .total-subtitle{
+        font-size: 10pt;
+    }
+    .tabel-container{
+        font-size: 13pt;
+    }
+    .statuses{
+        font-size: 10pt;
+    }
+    .keterangan{
+        max-width: 150px;
+    }
+}

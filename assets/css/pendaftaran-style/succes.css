@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: rgba(128, 128, 128, 0.103);
+}
+
+/* class navbar */
+.navbar{
+    background-color: #5b3a94;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.navbar-container{
+    margin-right: 40px;
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 2px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-title{
+    font-weight: bold;
+}
+.navbar-subtitle{
+    margin-top: -6px;
+    font-size: 10pt;
+}
+.navbar-items a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+.active{
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    background-color: #9d7bda;
+}
+/* end of navbar */
+
+.dialog-container{
+    height: 100vh;
+    background-color: #e8defc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dialog-card{
+    text-align: center;
+}
+.dialog-icon{
+    font-size: 4em;
+}
+.dialog-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #35107b;;
+}
+.tooltips{
+    margin-top: 20px;
+    color: grey;
+}
+.button-container{
+    margin-top: 80px;
+}
+.button-container a{
+    text-decoration: none;
+    background-color: #5b3a94;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+a.bantuan{
+    background-color: #bba3e4;
+    color: #5b3a94;
+}

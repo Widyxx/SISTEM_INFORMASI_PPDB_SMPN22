@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../../fonts/Poppins-Bold.ttf);
+}
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-image: url('../../images/reward-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.navbar{
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #7655b3;
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-around;
+}
+.navbar-title{
+    font-family: 'Poppins-Bold';
+    font-size: 1.3em;
+    color: #7655b3;
+}
+.navbar-menu{
+    display: flex;
+    gap: 80px;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a{
+    color: #7655b3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #7655b3;
+    color: white;
+}
+
+.content-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.content{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.prestasi-card{
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #7655b3;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.prestasi-card:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.774);
+    z-index: 1;
+}
+.content:hover .prestasi-card:not(:hover){
+    opacity: 0.5;
+}

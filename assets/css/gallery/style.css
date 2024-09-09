@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../../fonts/Poppins-Bold.ttf);
+}
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-image: url('../../images/home-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.navbar{
+    z-index: 1;
+    padding: 20px;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-around;
+    border-bottom: 1px solid #7655b3;
+}
+.navbar-title{
+    font-family: 'Poppins-Bold';
+    font-size: 1.3em;
+    color: #7655b3;
+}
+.navbar-menu{
+    display: flex;
+    gap: 80px;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a{
+    color: #7655b3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #7655b3;
+    color: white;
+}
+
+.content-container{
+    /* background-color: rgba(0, 0, 0, 0.274); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-container{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+}
+.photo-card{
+    margin: 20px;
+    width: fit-content;
+    padding: 10px 10px 40px 10px;
+    background-color: white;
+    box-shadow: 0px 10px 20px #0e0e0e4d;
+    transition: all .2s ease-in-out;
+}
+.photo-card:hover{
+    transform: scale(1.1);
+}
+.image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+}
+.image-detail{
+    text-align: center;
+}

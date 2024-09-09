@@ -1,0 +1,38 @@
+.form-title{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+input{
+    width: 500px;
+    padding-left: 20px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+}
+label{
+    color: white;
+}
+.form-description{
+    margin-top: 20px;
+}
+select{
+    height: 60px;
+    width: 520px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+}
+button{
+    height: 40px;
+    width: 100px;
+    background-color: aquamarine;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(91, 218, 175);
+    color: white;
+}

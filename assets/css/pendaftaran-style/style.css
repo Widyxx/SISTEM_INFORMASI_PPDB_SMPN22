@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: rgb(255, 255, 255);
+}
+
+/* class navbar */
+.navbar{
+    background-color: #5b3a94;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.navbar-container{
+    margin-right: 40px;
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 2px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-title{
+    font-size: 1.2em;
+}
+.navbar-subtitle{
+    margin-top: -6px;
+    font-size: 10pt;
+}
+.navbar-items a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+.active{
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    background-color: #9d7bda;
+}
+/* end of navbar */
+
+.content-button{
+    background-color: #9855b3;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 40px;
+}
+.content-button:hover{
+    transform: scale(1.1);
+}
+
+
+/* content-container css*/
+.content-container{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.image-form img{
+    height: 700px;
+    margin-right: -40px;
+}
+.form-container{
+    /* box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.199); */
+    padding: 20px;
+    border-radius: 15px;
+}
+.form-title{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.form-subtitle{
+    margin-bottom: 40px;
+}
+.form-detail-title{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: grey;
+}
+.form-siswa input{
+    width: 210px;
+    height: 45px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+}
+
+.wali-container{
+    display: flex;
+    justify-content: space-between;
+}
+.form-orangtua input{
+    width: 200px;
+    height: 45px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    margin-bottom: 5px;
+    font-family: 'Poppins';
+}
+.people-title{
+    color: grey;
+    margin-bottom: 10px;
+}
+.submit-btn{
+    text-align: center;
+}
+.submit-btn input{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #8059c4;
+    color: white;
+}
+.submit-btn input:hover{
+    cursor: pointer;
+    background-color: #5b3a94;
+}
+/* end of content container */
+
+
+/* footer */
+.footer{
+    width: 97.9%;
+    background-color:rgba(43, 43, 43, 0.075);
+    text-align: center;
+    color: grey;
+    padding: 20px;
+    font-size: 11pt;
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-container{
+        margin-left: -150px;
+        padding-bottom: 80px;
+    }
+    .image-form img{
+       display: none;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .content-container{
+        padding-bottom: 80px;
+    }
+    .image-form img{
+        height: 500px;
+     }
+}

@@ -1,0 +1,56 @@
+body{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-detail{
+    margin-left: 20px;
+    text-align: center;
+}
+.header-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.section-title-1{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: grey;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.section-title-2{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: grey;
+    margin-bottom: 10px;
+}
+.body table{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.print-btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(208, 166, 248);
+}
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+@media print {
+    button{
+        display: none;
+    }
+}

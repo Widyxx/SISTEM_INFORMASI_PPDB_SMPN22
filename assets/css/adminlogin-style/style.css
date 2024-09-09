@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.103);
+}
+*{
+    font-family: 'Poppins';
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-card{
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+.admin-header{
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #5b3a94;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+.admin-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-title img{
+    margin-right: 20px;
+}
+.header-title-container{
+    text-align: left;
+}
+.header-title{
+    font-weight: bold;
+}
+.header-subtitle{
+    font-size: 10pt;
+}
+.form-container{
+    margin-top: 100px;
+}
+.form-container input[type='text'], input[type='password']{
+    height: 50px;
+    width: 300px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgba(128, 128, 128, 0.151);
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.see-password{
+    margin-top: -10px;
+    text-align: left;
+}
+.see-password label{
+    font-size: 10pt;
+}
+.form-container input[type='submit']{
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    border: none;
+    background-color: #5b3a94;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: -40px;
+}
+.form-container input[type='submit']:hover{
+    cursor: pointer;
+    background-color: #331b5e;
+}
